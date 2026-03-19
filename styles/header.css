@@ -32,9 +32,9 @@ header {
 #mobile {
     display: none;
 }
-@media screen and (max-width: 1170px) {
+@media screen and (max-width: 1920px) {
     #nav_list,
-    #navbar .btn-default {
+    #navbar.btn-default {
         display: none;
     }
     #mobile_btn {
@@ -44,5 +44,17 @@ header {
         font-size: 1.5rem;
         cursor: pointer;
     }
-    
+    #mobile.active {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        position: absolute;
+       margin: 12px 0px;
+
+    }
+   #mobile_nav_list {
+        list-style: none;
+       text-align: center;
+    }
+
 }
